@@ -143,22 +143,28 @@ bool TendonDrivenRobot::forwardKinematics(Eigen::Matrix4d &ee_frame, Eigen::Matr
 
     //Choose correct model
     switch(model) {
-    case CosseratRod:                   success = mp_cr_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
+    case CosseratRod:                   
+        success = mp_cr_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
         break;
 
-    case ConstantCurvature:             success = mp_cc_model->forwardKinematics(diskFrames,q);
+    case ConstantCurvature:             
+        success = mp_cc_model->forwardKinematics(diskFrames,q);
         break;
 
-    case PiecewiseConstantCurvature:    success = mp_pcc_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
+    case PiecewiseConstantCurvature:    
+        success = mp_pcc_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
         break;
 
-    case PseudoRigidBody:               success = mp_prb_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
+    case PseudoRigidBody:               
+        success = mp_prb_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
         break;
 
-    case SubsegmentCosseratRod:         success = mp_sscr_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
+    case SubsegmentCosseratRod:         
+        success = mp_sscr_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
         break;
 
-    default:                            success = mp_cr_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
+    default:                            
+        success = mp_cr_model->forwardKinematics(diskFrames,q,f_ext,l_ext);
         break;
     }
 

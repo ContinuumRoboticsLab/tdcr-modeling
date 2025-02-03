@@ -44,7 +44,7 @@ Alternatively, the code can be compiled in Release mode for performance:
 	cmake -DCMAKE_BUILD_TYPE=Release ..
 	make
 
-Afterwards, you can execute the code by running the executable "tdcr-modeling".
+Afterwards, you can execute the code by running the executable "./tdcr-modeling".
 
 ### More Information
 

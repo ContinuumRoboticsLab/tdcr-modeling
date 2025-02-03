@@ -42,11 +42,8 @@ int main(int argc, char **argv)
     pradius_disks[0] = 10*1e-3;
     pradius_disks[1] = 10*1e-3;
 	
-	
 	//Radius of the backbone
     double ro = 0.7*1e-3;
-	
-	
 	
 	//Tendon routing expressed as a three-dimensional position vector in the local (disk) frame of the robot for each tendon
 	//First three tendons for first segment, last three tendons for second segment
